@@ -1,22 +1,6 @@
-server:
-  port: 8082
-
 spring:
   application:
-    name: shopping-cart
-#  cloud:
-#    config:
-#      uri: http://localhost:8888
-  h2:
-    console:
-      enable: true
-      path: /h2
-  datasource:
-    url: jdbc:h2:file:~/Documents/module-cart
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-  debug: true
+    name: cart
+  cloud:
+    config:
+      uri: http://localhost:8888
